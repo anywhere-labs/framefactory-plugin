@@ -1,0 +1,4 @@
+# Auto-mounted when this package is installed with `dsh plugin`.
+- insert:
+    - id: framefactory-plugin
+      name: '@anywhere-labs/framefactory-plugin'

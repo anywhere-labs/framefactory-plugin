@@ -1,0 +1,41 @@
+{
+  "name": "@anywhere-labs/framefactory-plugin",
+  "version": "0.1.0",
+  "description": "A runnable DeepSeek Harness plugin for FrameFactory content workflows.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src",
+    "tools",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "framefactory",
+    "content-creation",
+    "creator-tools"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anywhere-labs/framefactory-plugin.git"
+  },
+  "homepage": "https://github.com/anywhere-labs/framefactory-plugin",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
