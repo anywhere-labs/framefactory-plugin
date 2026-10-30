@@ -45,6 +45,10 @@ const SKILL = `
 
 export const name = 'framefactory-plugin'
 
+// Declare the skills service before apply() reads ctx.skills: cordis refuses to
+// expose an un-injected service, so without this the plugin never activates.
+export const inject = ['skills']
+
 /**
  * Mount the public, dependency-light FrameFactory skill into a DSH profile.
  * The host owns the skill registry; this plugin only contributes the workflow.
